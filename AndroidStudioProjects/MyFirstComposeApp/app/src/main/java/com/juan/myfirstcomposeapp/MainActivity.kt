@@ -12,6 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.juan.myfirstcomposeapp.component.layout.ExerciseOne
 import com.juan.myfirstcomposeapp.component.layout.MyBasicConstraintLayout
+import com.juan.myfirstcomposeapp.component.layout.MyBasicConstraintLayoutChallenge
 import com.juan.myfirstcomposeapp.component.layout.MyComplexLayout
 import com.juan.myfirstcomposeapp.ui.theme.MyFirstComposeAppTheme
 import com.juan.myfirstcomposeapp.login.Greeting
@@ -39,7 +40,9 @@ class MainActivity : ComponentActivity() {
                  //   Practica1(Modifier.padding(innerPadding))
                   //  ExerciseOne(Modifier.padding(innerPadding))
                 //    MyBasicConstraintLayout(Modifier.padding(innerPadding))
-                    PracticaConstraint(Modifier.padding(innerPadding))
+                 //   PracticaConstraint(Modifier.padding(innerPadding))
+                    MyBasicConstraintLayoutChallenge(Modifier.padding(innerPadding))
+
 
                 }
             }

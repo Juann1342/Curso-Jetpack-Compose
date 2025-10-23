@@ -10,6 +10,11 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.juan.myfirstcomposeapp.component.MyTextField
+import com.juan.myfirstcomposeapp.component.MyTextFieldParent
+import com.juan.myfirstcomposeapp.component.MyTexts
+import com.juan.myfirstcomposeapp.component.layout.ConstraintBarrier
+import com.juan.myfirstcomposeapp.component.layout.ConstraintChain
 import com.juan.myfirstcomposeapp.component.layout.ExerciseOne
 import com.juan.myfirstcomposeapp.component.layout.MyBasicConstraintLayout
 import com.juan.myfirstcomposeapp.component.layout.MyBasicConstraintLayoutChallenge
@@ -19,6 +24,8 @@ import com.juan.myfirstcomposeapp.login.Greeting
 import com.juan.myfirstcomposeapp.component.layout.MyRow
 import com.juan.myfirstcomposeapp.component.layout.Practica1
 import com.juan.myfirstcomposeapp.component.layout.PracticaConstraint
+import com.juan.myfirstcomposeapp.component.layout.constraintExampleGuide
+import com.juan.myfirstcomposeapp.state.MyState
 
 
 class MainActivity : ComponentActivity() {
@@ -41,7 +48,18 @@ class MainActivity : ComponentActivity() {
                   //  ExerciseOne(Modifier.padding(innerPadding))
                 //    MyBasicConstraintLayout(Modifier.padding(innerPadding))
                  //   PracticaConstraint(Modifier.padding(innerPadding))
-                    MyBasicConstraintLayoutChallenge(Modifier.padding(innerPadding))
+                  //  MyBasicConstraintLayoutChallenge(Modifier.padding(innerPadding))
+                   // constraintExampleGuide(Modifier.padding(innerPadding))
+                   // ConstraintBarrier(Modifier.padding(innerPadding))
+                 //   ConstraintChain(Modifier.padding(innerPadding))
+                   // MyState(Modifier.padding(innerPadding))
+                  //  MyTexts(Modifier.padding(innerPadding))
+                //    MyTextField(Modifier.padding(innerPadding))
+                    MyTextFieldParent(Modifier.padding(innerPadding))
+
+
+
+
 
 
                 }

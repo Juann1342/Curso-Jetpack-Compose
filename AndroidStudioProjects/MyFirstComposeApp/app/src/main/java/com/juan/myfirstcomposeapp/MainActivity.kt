@@ -11,6 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.juan.myfirstcomposeapp.component.MyButtons
+import com.juan.myfirstcomposeapp.component.MyNetWorkImage
 import com.juan.myfirstcomposeapp.component.MyTextField
 import com.juan.myfirstcomposeapp.component.MyTextFieldParent
 import com.juan.myfirstcomposeapp.component.MyTexts
@@ -57,7 +58,8 @@ class MainActivity : ComponentActivity() {
                   //  MyTexts(Modifier.padding(innerPadding))
                 //    MyTextField(Modifier.padding(innerPadding))
                    // MyTextFieldParent(Modifier.padding(innerPadding))
-                    MyButtons(Modifier.padding(innerPadding))
+                  //  MyButtons(Modifier.padding(innerPadding))
+                    MyNetWorkImage(Modifier.padding(innerPadding))
 
 
 

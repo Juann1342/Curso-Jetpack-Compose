@@ -15,6 +15,9 @@ import com.juan.myfirstcomposeapp.component.MyNetWorkImage
 import com.juan.myfirstcomposeapp.component.MyTextField
 import com.juan.myfirstcomposeapp.component.MyTextFieldParent
 import com.juan.myfirstcomposeapp.component.MyTexts
+import com.juan.myfirstcomposeapp.component.Progress
+import com.juan.myfirstcomposeapp.component.ProgressAdvance
+import com.juan.myfirstcomposeapp.component.ProgressAnimation
 import com.juan.myfirstcomposeapp.component.layout.ConstraintBarrier
 import com.juan.myfirstcomposeapp.component.layout.ConstraintChain
 import com.juan.myfirstcomposeapp.component.layout.ExerciseOne
@@ -59,7 +62,12 @@ class MainActivity : ComponentActivity() {
                 //    MyTextField(Modifier.padding(innerPadding))
                    // MyTextFieldParent(Modifier.padding(innerPadding))
                   //  MyButtons(Modifier.padding(innerPadding))
-                    MyNetWorkImage(Modifier.padding(innerPadding))
+                   // MyNetWorkImage(Modifier.padding(innerPadding))
+                  //  Progress(Modifier.padding(innerPadding))
+                //    ProgressAdvance(Modifier.padding(innerPadding))
+                    ProgressAnimation(Modifier.padding(innerPadding))
+
+
 
 
 

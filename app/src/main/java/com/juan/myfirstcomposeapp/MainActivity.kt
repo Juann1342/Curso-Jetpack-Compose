@@ -10,7 +10,10 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.juan.myfirstcomposeapp.component.MyCheckBox
 import com.juan.myfirstcomposeapp.component.MySwitch
+import com.juan.myfirstcomposeapp.component.ParentCheckBoxes
+import com.juan.myfirstcomposeapp.component.TriStateCheckBox
 import com.juan.myfirstcomposeapp.ui.theme.MyFirstComposeAppTheme
 import com.juan.myfirstcomposeapp.login.Greeting
 
@@ -48,8 +51,10 @@ class MainActivity : ComponentActivity() {
                   //  Progress(Modifier.padding(innerPadding))
                 //    ProgressAdvance(Modifier.padding(innerPadding))
                //     ProgressAnimation(Modifier.padding(innerPadding))
-                    MySwitch(Modifier.padding(innerPadding))
-
+                //    MySwitch(Modifier.padding(innerPadding))
+                  //  MyCheckBox(Modifier.padding(innerPadding))
+                //    ParentCheckBoxes(Modifier.padding(innerPadding))
+                    TriStateCheckBox(Modifier.padding(innerPadding))
 
 
 

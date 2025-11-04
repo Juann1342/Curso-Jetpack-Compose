@@ -12,6 +12,8 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.material3.Checkbox
 import androidx.compose.material3.CheckboxDefaults
 import androidx.compose.material3.Icon
+import androidx.compose.material3.RadioButton
+import androidx.compose.material3.RadioButtonDefaults
 import androidx.compose.material3.Switch
 import androidx.compose.material3.SwitchDefaults
 import androidx.compose.material3.Text
@@ -183,6 +185,50 @@ fun TriStateCheckBox(modifier: Modifier = Modifier) {
             Checkbox(child2, onCheckedChange = {child2=it})
             Text("Ejemplo 2")
         }
+    }
+    
+}
+
+@Composable
+fun MyRadioButton(modifier: Modifier = Modifier) {
+    var state by remember { mutableStateOf(false) }
+    Row(modifier = modifier,verticalAlignment = Alignment.CenterVertically) {
+    RadioButton(
+        selected = state,
+        onClick = {state = true}, //en onclick no hay it
+        enabled = true,
+        colors = RadioButtonDefaults.colors(selectedColor = Color.Green, unselectedColor = Color.Red, disabledSelectedColor = Color.DarkGray, disabledUnselectedColor = Color.Cyan)
+
+    )
+        Text("Ejemplo 1")
+    }
+    
+}
+
+//avanzado
+@Composable
+fun MyRadioButtonList(modifier: Modifier = Modifier) {
+    var selectedName: String by remember {mutableStateOf("")}
+    Column(modifier=modifier) {
+        RadioButtonComponent("Juan", selectedName=selectedName) { selectedName=it }
+        RadioButtonComponent("Pepe", selectedName=selectedName) { selectedName=it }
+        RadioButtonComponent("David", selectedName=selectedName) { selectedName=it }
+        RadioButtonComponent("Maria", selectedName=selectedName) { selectedName=it }
+        RadioButtonComponent("Julieta", selectedName=selectedName) { selectedName=it }
+
+
+
+    }
+    
+}
+
+@Composable
+fun RadioButtonComponent(name: String, selectedName: String, onItemSelected: (String) -> Unit) {
+    Row(verticalAlignment = Alignment.CenterVertically) {
+
+        RadioButton(selected = name == selectedName, onClick = {onItemSelected(name)})//si el nombre que recibo por parametro es igual al seleccionado, significa que este es el seleccionado
+        Text(name, modifier = Modifier.clickable {onItemSelected(name)})
+
     }
     
 }

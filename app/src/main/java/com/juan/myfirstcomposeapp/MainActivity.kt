@@ -6,11 +6,14 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.RadioButton
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.juan.myfirstcomposeapp.component.MyCheckBox
+import com.juan.myfirstcomposeapp.component.MyRadioButton
+import com.juan.myfirstcomposeapp.component.MyRadioButtonList
 import com.juan.myfirstcomposeapp.component.MySwitch
 import com.juan.myfirstcomposeapp.component.ParentCheckBoxes
 import com.juan.myfirstcomposeapp.component.TriStateCheckBox
@@ -54,12 +57,9 @@ class MainActivity : ComponentActivity() {
                 //    MySwitch(Modifier.padding(innerPadding))
                   //  MyCheckBox(Modifier.padding(innerPadding))
                 //    ParentCheckBoxes(Modifier.padding(innerPadding))
-                    TriStateCheckBox(Modifier.padding(innerPadding))
-
-
-
-
-
+                //    TriStateCheckBox(Modifier.padding(innerPadding))
+                //    MyRadioButton(Modifier.padding(innerPadding))
+                    MyRadioButtonList(Modifier.padding(innerPadding))
 
 
 

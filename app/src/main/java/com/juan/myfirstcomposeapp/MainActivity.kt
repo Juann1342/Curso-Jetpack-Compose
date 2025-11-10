@@ -14,9 +14,12 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.juan.myfirstcomposeapp.component.MyCheckBox
 import com.juan.myfirstcomposeapp.component.MyRadioButton
 import com.juan.myfirstcomposeapp.component.MyRadioButtonList
+import com.juan.myfirstcomposeapp.component.MySlider
+import com.juan.myfirstcomposeapp.component.MySliderAdvance
 import com.juan.myfirstcomposeapp.component.MySwitch
 import com.juan.myfirstcomposeapp.component.ParentCheckBoxes
 import com.juan.myfirstcomposeapp.component.TriStateCheckBox
+import com.juan.myfirstcomposeapp.component.myRangeSlider
 import com.juan.myfirstcomposeapp.ui.theme.MyFirstComposeAppTheme
 import com.juan.myfirstcomposeapp.login.Greeting
 
@@ -59,7 +62,13 @@ class MainActivity : ComponentActivity() {
                 //    ParentCheckBoxes(Modifier.padding(innerPadding))
                 //    TriStateCheckBox(Modifier.padding(innerPadding))
                 //    MyRadioButton(Modifier.padding(innerPadding))
-                    MyRadioButtonList(Modifier.padding(innerPadding))
+               //     MyRadioButtonList(Modifier.padding(innerPadding))
+                //    MySlider(Modifier.padding(innerPadding))
+                 //   MySliderAdvance(Modifier.padding(innerPadding))
+                    myRangeSlider(Modifier.padding(innerPadding))
+
+
+
 
 
 

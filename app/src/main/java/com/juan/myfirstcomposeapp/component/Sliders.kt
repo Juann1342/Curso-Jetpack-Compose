@@ -94,7 +94,7 @@ fun MySliderAdvance(modifier: Modifier = Modifier) {
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun myRangeSlider(modifier: Modifier = Modifier) {
+fun MyRangeSlider(modifier: Modifier = Modifier) {
     Column (modifier=modifier.padding(horizontal = 30.dp)){
         var state: RangeSliderState = remember { RangeSliderState(
             activeRangeStart = 3f, //donde empieza

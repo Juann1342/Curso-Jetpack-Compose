@@ -12,6 +12,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.juan.myfirstcomposeapp.component.MyCheckBox
+import com.juan.myfirstcomposeapp.component.MyDropDownItem
+import com.juan.myfirstcomposeapp.component.MyDropDownMenu
+import com.juan.myfirstcomposeapp.component.MyExposedDropdownMenu
 import com.juan.myfirstcomposeapp.component.MyRadioButton
 import com.juan.myfirstcomposeapp.component.MyRadioButtonList
 import com.juan.myfirstcomposeapp.component.MySlider
@@ -19,7 +22,7 @@ import com.juan.myfirstcomposeapp.component.MySliderAdvance
 import com.juan.myfirstcomposeapp.component.MySwitch
 import com.juan.myfirstcomposeapp.component.ParentCheckBoxes
 import com.juan.myfirstcomposeapp.component.TriStateCheckBox
-import com.juan.myfirstcomposeapp.component.myRangeSlider
+import com.juan.myfirstcomposeapp.component.MyRangeSlider
 import com.juan.myfirstcomposeapp.ui.theme.MyFirstComposeAppTheme
 import com.juan.myfirstcomposeapp.login.Greeting
 
@@ -65,7 +68,12 @@ class MainActivity : ComponentActivity() {
                //     MyRadioButtonList(Modifier.padding(innerPadding))
                 //    MySlider(Modifier.padding(innerPadding))
                  //   MySliderAdvance(Modifier.padding(innerPadding))
-                    myRangeSlider(Modifier.padding(innerPadding))
+                 //   MyRangeSlider(Modifier.padding(innerPadding))
+                  //  MyDropDownItem(Modifier.padding(innerPadding))
+               //     MyDropDownMenu(Modifier.padding(innerPadding))
+                    MyExposedDropdownMenu(Modifier.padding(innerPadding))
+
+
 
 
 

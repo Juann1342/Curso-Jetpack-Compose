@@ -4,12 +4,18 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.RadioButton
 import androidx.compose.material3.Scaffold
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.style.LineHeightStyle
 import androidx.compose.ui.tooling.preview.Preview
 import com.juan.myfirstcomposeapp.component.MyCheckBox
 import com.juan.myfirstcomposeapp.component.MyDropDownItem
@@ -23,6 +29,7 @@ import com.juan.myfirstcomposeapp.component.MySwitch
 import com.juan.myfirstcomposeapp.component.ParentCheckBoxes
 import com.juan.myfirstcomposeapp.component.TriStateCheckBox
 import com.juan.myfirstcomposeapp.component.MyRangeSlider
+import com.juan.myfirstcomposeapp.component.MyTopAppBar
 import com.juan.myfirstcomposeapp.ui.theme.MyFirstComposeAppTheme
 import com.juan.myfirstcomposeapp.login.Greeting
 
@@ -34,7 +41,8 @@ class MainActivity : ComponentActivity() {
         setContent {
             MyFirstComposeAppTheme {
                 //el innerpadding es el padding que nos da por defecto para que las cosas no se apilen
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+                //el scaffold es el esqueleto principal donde yo voy a anclar los composables
+                Scaffold(modifier = Modifier.fillMaxSize(), topBar = { MyTopAppBar() }) { innerPadding ->
                    /* Greeting(
                         name = "Android",
                         modifier = Modifier.padding(innerPadding)
@@ -71,9 +79,12 @@ class MainActivity : ComponentActivity() {
                  //   MyRangeSlider(Modifier.padding(innerPadding))
                   //  MyDropDownItem(Modifier.padding(innerPadding))
                //     MyDropDownMenu(Modifier.padding(innerPadding))
-                    MyExposedDropdownMenu(Modifier.padding(innerPadding))
+                 //   MyExposedDropdownMenu(Modifier.padding(innerPadding))
 
-
+            //trabajando con scaffold, pongo los elementos en el. (mira arriba)
+                    Box(modifier = Modifier.padding(innerPadding).fillMaxSize().background(Color.Cyan), contentAlignment = Alignment.Center){
+                        Text("Esta es mi screen")
+                    }
 
 
 
